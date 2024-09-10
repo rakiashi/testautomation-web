@@ -23,12 +23,11 @@ Basic test steps are focused during implementing this framework which helps duri
     git
  
   ## Installation Steps
-  1.git clone <github-repo>
-  2.unzip the project and navigate to project directory
-  2.*npm ci*
-  3.*npm run test* [runs all the playwright test]
-  4.*npm run playwright-report* to view playwright built in report 
-
+   * git clone <github-repo>
+   * unzip the project and navigate to project directory
+   * *npm ci*
+   * *npm run test* [runs all the playwright test]
+   * *npm run playwright-report* to view playwright built in report 
 
   **Note:** 
  * The BASE_URL is configured in *env.config.json* by default test runs on local [app_src/index.html]
