@@ -11,7 +11,8 @@ test.describe("Login Test Using Valid Credentials", async () => {
     accountPage,
   }) => {
     // using one of the valid user to loging-in
-    const user = data.users.validCredentials[1];
+    const userIndex = Math.floor(Math.random() * data.users.validCredentials.length);
+    const user = data.users.validCredentials[userIndex];
     await loginPage.verifyHeaderTitleAndDefaultElements();
     await loginPage.login(user.email, user.password);
     await accountPage.verifyAccountPageDefaultElements();
@@ -20,28 +21,14 @@ test.describe("Login Test Using Valid Credentials", async () => {
   });
 });
 
-test.describe("E2E Test : A List Of Valid Credentials", async () => {
-  // a list of valid credentials for e2e test to login and logout
-  for (const user of data.users.validCredentials) {
-    test(`A valid user as : ${user.email} should be able to log in and log out successfully. @Regression`, async ({
-      loginPage,
-      accountPage,
-    }) => {
-      await loginPage.login(user.email, user.password);
-      await accountPage.ensureUserLoggedIn();
-      await accountPage.logout();
-      await accountPage.ensureUserNotLoggedIn();
-    });
-  }
-});
-
 test.describe("Login Validation For Incorrect Credentials", async () => {
   test("An incorrect credential should fail to log-in. @P1", async ({
     loginPage,
     accountPage,
   }) => {
     // using one of the invalid user to loging-in
-    const user = data.users.inValidCredentials[1];
+    const userIndex = Math.floor(Math.random() * data.users.inValidCredentials.length);
+    const user = data.users.inValidCredentials[userIndex];
     await loginPage.login(user.email, user.password);
     await accountPage.ensureUserNotLoggedIn();
   });

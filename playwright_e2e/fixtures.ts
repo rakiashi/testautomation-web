@@ -22,5 +22,5 @@ export const test = base.extend<{
   },
   commonHelper: async ({ page }, use) => {
     await use(new CommonHelper(page));
-  },
+  }
 });
