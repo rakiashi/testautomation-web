@@ -19,13 +19,13 @@ Basic test steps are focused during implementing this framework which helps duri
       |-logout.test.ts
 
 ### **Pre-requisites**
-	node version* - >v21.0.x
-    git
+  * node version* - >v21.0.x
+  * git
  
   ## Installation Steps
    * git clone <github-repo>
    * unzip the project and navigate to project directory
-   * *npm ci*
+   * *npm ci* & *npm playwright install --with-deps
    * *npm run test* [runs all the playwright test]
    * *npm run playwright-report* to view playwright built in report 
 
