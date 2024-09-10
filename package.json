@@ -1,0 +1,27 @@
+{
+  "name": "testautomation-web",
+  "version": "1.0.0",
+  "description": "We are looking for Automation Engineers that have the mindset \"only the sky is the limit\" and \"automation doesn't stop at testing, it's just a beginning!\" ;)",
+  "main": "index.js",
+  "scripts": {
+    "test":"npx playwright test",
+    "clean-reports": "npx ts-node ./playwright_e2e/utils/init.ts",
+    "generate-allure-reports": "allure generate allure-results --clean -o allure-report",
+    "test-local-chromium-p1": "npm run clean-reports && ENV=local BROWSER=chromium npx playwright test --config=playwright.config.ts --grep=@P1 && npm run generate-allure-reports",
+    "test-local-firefox-regression": "npm run clean-reports && ENV=local BROWSER=firefox npx playwright test --config=playwright.config.ts --grep=@Regression && npm run generate-allure-reports",
+    "playwright-report": "npx playwright show-report",
+    "allure-report": "allure open allure-report --host 0.0.0.0"
+  },
+  "keywords": [],
+  "author": "Rakesh Mahadevaswamy",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.47.0",
+    "allure-playwright": "^3.0.0-beta.12",
+    "fs-extra": "^11.2.0",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@types/node": "^22.5.4"
+  }
+}

@@ -1,0 +1,18 @@
+{
+    "pages": {
+      "loginPageTitle": "Single Page Application",
+      "headerTitle": "Automation doesn't stop at testing, it's just a beginning!"
+    },
+    "users": {
+        "validCredentials": [ 
+            {"email": "admin@admin.com", "password": "2020"},
+            {"email": "biancunha@gmail.com", "password": "123456"},
+            {"email": "growdev@growdev.com.br", "password": "growdev123"}
+        ],
+        "inValidCredentials": [ 
+            {"email": "invalid@test.com", "password": "2020222"},
+            {"email": "invalidUser@gmal.com", "password": "invalidPassword"}
+        ] 
+    }
+  }
+  

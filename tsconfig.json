@@ -1,0 +1,21 @@
+{
+	"compileOnSave": true,
+	"allowSyntheticDefaultImports": true,
+	"compilerOptions": {
+		"outDir": "./dist/out-tsc",
+		"sourceMap": false,
+		"declaration": false,
+		"module": "CommonJS",
+		"moduleResolution": "node",
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"target": "ES2022",
+		"typeRoots": ["./node_modules/@types", 
+						],
+		"lib": ["es2015", "dom"],
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"resolveJsonModule": true,
+		"esModuleInterop": true,
+	}
+}
