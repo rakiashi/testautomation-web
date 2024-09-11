@@ -5,8 +5,8 @@ test.beforeEach(async ({ basePage }, testInfo) => {
   await basePage.visit(testInfo.project.use.baseURL);
 });
 
-test.describe("Simulating session storage expiry by clearing localStorage", async () => {
-  test("An logged-in user should logout successfully by clearing localstorage. @Regression", async ({
+test.describe("Simulating browser storage clear data by clearing localStorage", async () => {
+  test("An logged-in user should logout successfully by clearing localstorage.",{ tag: ['@Regression']}, async ({
     basePage,
     loginPage,
     accountPage,

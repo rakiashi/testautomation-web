@@ -1,19 +1,18 @@
 ### Test Assesment 
 
-Playwright-e2e testing framework is integrated within the local[FE] existing source code of the login app , along with capabities of cross browser testing , testing on local / different test levels enviornments using enviornment variables.
+Playwright_2e testing framework is integrated within the local[FE] existing source code of the login web app , along with capabities of cross browser testing , testing on local / different test levels enviornments using enviornment variables.
 
 Basic test steps are focused during implementing this framework which helps during debugging failed tests through report, a static locators (data-testid) has been added on source code level to minimizing acessing controls using class-names/id.
 
 ### Test Scenarios Covered
 
 * Login Test Using Valid Credentials : An valid user should be able to login successfully.
-* E2E Test : A List Of Valid Credentials 
-* Login Validation For Incorrect Credentials : An incorrect credential should fail to log-in. @P1
-* Logout Test Using Valid Credentials : An valid user should be able to login and logout successfully.
-* Simulating session expiry by clearing localStorage : An logged-in user should logout successfully by clearing localstorage.
+* E2E Test : Multiple Valid Credentials 
+* Login Validation For Incorrect Credentials : An incorrect credential should fail to log-in.
+* Simulating browser storage clear data by clearing localStorage : An logged-in user should logout successfully by clearing localstorage.
 
+## playwright_e2e test
 
-## playwright_e2e
     tests
       |-login.test.ts
       |-logout.test.ts
@@ -23,7 +22,7 @@ Basic test steps are focused during implementing this framework which helps duri
   * git
  
   ## Installation Steps
-   * git clone <github-repo>
+   * git clone https://github.com/rakiashi/testautomation-web.git
    * unzip the project and navigate to project directory
    * *npm ci* & *npm playwright install --with-deps
    * *npm run test* [runs all the playwright test]

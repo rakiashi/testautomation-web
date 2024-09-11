@@ -6,7 +6,7 @@ test.beforeEach(async ({ basePage }, testInfo) => {
 });
 
 test.describe("Login Test Using Valid Credentials", async () => {
-  test("An valid user should be able to login successfully. @P1", async ({
+  test("An valid user should be able to login successfully.",{ tag: ['@P1'] }, async ({
     loginPage,
     accountPage,
   }) => {
@@ -22,7 +22,7 @@ test.describe("Login Test Using Valid Credentials", async () => {
 });
 
 test.describe("Login Validation For Incorrect Credentials", async () => {
-  test("An incorrect credential should fail to log-in. @P1", async ({
+  test("An incorrect credential should fail to log-in.",{ tag: ['@P1'] }, async ({
     loginPage,
     accountPage,
   }) => {
