@@ -23,10 +23,11 @@ Basic test steps are focused during implementing this framework which helps duri
  
   ## Installation Steps
    * git clone https://github.com/rakiashi/testautomation-web.git
-   * unzip the project and navigate to project directory
-   * *npm ci* & *npm playwright install --with-deps
-   * *npm run test* [runs all the playwright test]
-   * *npm run playwright-report* to view playwright built in report 
+   * unzip the project and navigate to project directory from your terminal
+   * run cmd *npm ci* 
+   * run cmd *npm playwright install --with-deps*
+   * run cmd *npm run test*
+   * run cmd to view latest run playwright report *npm run playwright-report*
 
   **Note:** 
  * The BASE_URL is configured in *env.config.json* by default test runs on local [app_src/index.html]
